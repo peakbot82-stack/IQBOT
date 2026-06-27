@@ -87,7 +87,7 @@ fullscreen = 1
 # (bool) If True, the status bar will be hidden
 android.statusbar_hide = True
 
-# (str) Window size (width x height)
+# (str) Window size (width x height) - SOLO UNA VEZ
 window.size = 420x800
 
 # (bool) Enable/disable focus on touch
@@ -115,91 +115,35 @@ android.sdk_build_tools =
 android.java_version = 11
 
 # ==================== KIVY PROPERTIES ====================
-
-# (str) The title of the window
+# (Opcional) Configuraciones adicionales de Kivy
 window.title = ZEUS BOT
-
-# (str) The icon of the window
 window.icon = 
-
-# (str) The size of the window
-window.size = 420x800
-
-# (bool) The fullscreen mode of the window
 window.fullscreen = False
-
-# (bool) The resizable mode of the window
 window.resizable = False
-
-# (str) The borderless mode of the window
 window.borderless = False
-
-# (str) The status bar mode of the window
 window.statusbar = True
-
-# (str) The toolbar mode of the window
 window.toolbar = True
-
-# (bool) Enable/disable the use of the mouse
 window.mouse = True
-
-# (bool) Enable/disable the use of the touch
 window.touch = True
-
-# (bool) Enable/disable the use of the multitouch
 window.multitouch = True
-
-# (bool) Enable/disable the use of the screen saver
 window.screensaver = True
 
 # ==================== IOS PROPERTIES ====================
-
-# (str) The title of the application
 ios.title = ZEUS BOT
-
-# (str) The name of the application
 ios.name = ZEUS BOT
-
-# (str) The bundle identifier
 ios.bundle = org.zeus.zeusbot
-
-# (str) The version of the application
 ios.version = 1.0.0
-
-# (str) The build number of the application
 ios.build = 1
-
-# (str) The copyright of the application
 ios.copyright = Copyright (c) 2026
-
-# (list) The required devices
 ios.required_devices = iphone, ipad
-
-# (str) The minimum iOS version
 ios.min_ios_version = 10.0
-
-# (bool) Whether to allow the use of the camera
 ios.camera = False
-
-# (bool) Whether to allow the use of the photo library
 ios.photo_library = False
-
-# (bool) Whether to allow the use of the location
 ios.location = False
-
-# (bool) Whether to allow the use of the push notifications
 ios.push_notifications = False
 
 # ==================== DEPLOYMENT ====================
-
-# (str) The directory to deploy to
 deploy.dir = deploy
-
-# (bool) Whether to use the system Python or not
 deploy.system_python = False
-
-# (str) The name of the log file
 deploy.log = deploy.log
-
-# (str) The name of the error log file
 deploy.error_log = deploy_error.log
