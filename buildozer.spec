@@ -9,6 +9,9 @@ package.name = zeusbot
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.zeus
 
+# (str) Application versioning (method 1)
+version = 1.0.0
+
 # (str) Source code where the main.py live
 source.dir = .
 
@@ -87,7 +90,7 @@ fullscreen = 1
 # (bool) If True, the status bar will be hidden
 android.statusbar_hide = True
 
-# (str) Window size (width x height) - SOLO UNA VEZ
+# (str) Window size (width x height)
 window.size = 420x800
 
 # (bool) Enable/disable focus on touch
@@ -115,7 +118,6 @@ android.sdk_build_tools =
 android.java_version = 11
 
 # ==================== KIVY PROPERTIES ====================
-# (Opcional) Configuraciones adicionales de Kivy
 window.title = ZEUS BOT
 window.icon = 
 window.fullscreen = False
