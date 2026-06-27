@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04  # <- Usamos Ubuntu 20.04 en vez de latest
     
     steps:
     - name: Checkout code
@@ -28,17 +28,17 @@ jobs:
           git zip unzip openjdk-17-jdk \
           autoconf libtool pkg-config zlib1g-dev \
           libncurses5-dev libncursesw5-dev libtinfo5 \
-          cmake libffi-dev libssl-dev
+          cmake libffi-dev libssl-dev \
+          wget
     
     - name: Setup Java
       run: |
         echo "JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64" >> $GITHUB_ENV
     
-    - name: Build with Buildozer (first attempt)
+    - name: Build with Buildozer
       env:
         JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
       run: |
-        # Buildozer descargará e instalará el SDK automáticamente
         buildozer android debug
         
     - name: Upload APK
