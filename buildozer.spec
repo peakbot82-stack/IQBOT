@@ -108,12 +108,6 @@ android.logcat_filters = *:S python:D
 # (bool) Enable/disable the display of the logcat on the screen
 android.logcat_on_screen = False
 
-# (bool) Enable/disable the display of the logcat on the screen
-android.logcat_on_screen = False
-
-# (str) The Android logcat filters to use
-android.logcat_filters = *:S python:D
-
 # (str) The Android SDK built tools to use
 android.sdk_build_tools = 
 
